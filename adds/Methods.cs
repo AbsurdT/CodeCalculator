@@ -7,7 +7,7 @@ namespace CodeCalculator
     {
         public static bool DecimalOrNot(string value, out decimal result)
         {
-            value = value.Trim();
+            value = value.Trim([' ', '`']);
             if (value.Contains('.'))
             {
                 value = value.Replace('.', ',');
